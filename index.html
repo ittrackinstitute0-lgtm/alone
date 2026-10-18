@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Usman Furniture Mart | Luxury Handcrafted Furniture</title>
+    <meta name="description" content="Al-Usman Furniture Mart - Pakistan's premier destination for luxury handcrafted solid wood furniture, bespoke living room, bedroom, dining and office designs.">
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= Top Announcement Bar ================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +92 300 1234567</span>
+                <span><i class="fa-solid fa-location-dot"></i> Main GT Road, Showroom #12-16</span>
+            </div>
+            <div class="top-bar-center">
+                ✨ Grand Festive Sale: Flat 10% Off with code <mark>ALUSMAN10</mark> | Free Delivery Across Pakistan!
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/923001234567?text=Hello%20Al-Usman%20Furniture%20Mart,%20I%20want%20to%20inquire%20about%20furniture" target="_blank">
+                    <i class="fa-brands fa-whatsapp text-success"></i> WhatsApp Support
+                </a>
+                <a href="admin.html" class="admin-portal-pill">
+                    <i class="fa-solid fa-gauge-high"></i> Admin Portal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Main Header / Navbar ================= -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon-box">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-title">Al-Usman</h1>
+                    <span>Furniture Mart</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#catalog">Shop Collections</a></li>
+                    <li><a href="#craftsmanship">Bespoke Workshop</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#catalog" class="action-btn" title="Search Catalog" onclick="focusSearch()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="action-btn" id="wishlistTriggerBtn" title="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge-count" id="wishlistCount">0</span>
+                </div>
+                <div class="action-btn" id="cartTriggerBtn" title="Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge-count" id="cartCount">0</span>
+                </div>
+                <a href="admin.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;" title="Go to Admin Panel">
+                    <i class="fa-solid fa-lock"></i> Admin
+                </a>
+                <div class="action-btn mobile-toggle" id="mobileMenuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= Hero Section ================= -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-gem"></i> Handcrafted Royal Collection 2026
+                    </div>
+                    <h1 class="hero-title">
+                        Crafted With Soul, <br>
+                        <span>Built For Generations.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Experience the heritage of 100% solid Sheesham & Teak wood combined with contemporary Italian design aesthetics. Bespoke living, bedroom and luxury dining suites designed for royal Pakistani homes.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#catalog" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-down"></i> Explore Catalog
+                        </a>
+                        <a href="https://wa.me/923001234567?text=Hello%20Al-Usman%20Furniture,%20I%20need%20a%20custom%20furniture%20quote." target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+                        </a>
+                        <a href="admin.html" class="btn btn-secondary">
+                            <i class="fa-solid fa-sliders"></i> Store Manager
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>25+</h4>
+                            <p>Years Crafting Heritage</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15,000+</h4>
+                            <p>Homes Furnished</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>10 Yrs</h4>
+                            <p>Wood Warranty</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="hero-image-card">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Al-Usman Luxury Living Room Setup">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="floating-text">
+                            <h5>Master Sheesham Wood</h5>
+                            <p>Seasoned kiln-dried wood with termite proofing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Features Strip ================= -->
+    <div class="features-strip">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="feature-info">
+                        <h4>Nationwide Delivery</h4>
+                        <p>Free white-glove setup on orders over Rs. 50k</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="feature-info">
+                        <h4>10-Year Wood Warranty</h4>
+                        <p>Against borer, termite, and structural bends</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div class="feature-info">
+                        <h4>Custom 3D Room Design</h4>
+                        <p>Tailored sizes, fabric choices and wood polish</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="feature-info">
+                        <h4>Direct Factory Pricing</h4>
+                        <p>No middlemen markup. Best value in Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Categories Showcase ================= -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Exquisite Categories</span>
+                <h2 class="section-title">Curated For Every Corner</h2>
+                <p class="section-desc">Discover our comprehensive collection of handcrafted furniture pieces, thoughtfully organized for your dream home.</p>
+            </div>
+
+            <div class="categories-grid" id="categoriesGrid">
+                <div class="category-card" onclick="filterByCategory('Living Room')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Living Room">
+                    </div>
+                    <div class="category-body">
+                        <h4>Living Room</h4>
+                        <span>Sofas & Tables</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Bedroom')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Bedroom Sets">
+                    </div>
+                    <div class="category-body">
+                        <h4>Bedroom</h4>
+                        <span>Beds & Wardrobes</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Dining Room')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Dining Sets">
+                    </div>
+                    <div class="category-body">
+                        <h4>Dining Room</h4>
+                        <span>Tables & Chairs</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Office')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1580481077195-c3a821a506cb?auto=format&fit=crop&w=600&q=80" alt="Office Furniture">
+                    </div>
+                    <div class="category-body">
+                        <h4>Office</h4>
+                        <span>Desks & Executive Chairs</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Luxury Lounge')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=600&q=80" alt="Lounge & Accent Chairs">
+                    </div>
+                    <div class="category-body">
+                        <h4>Luxury Lounge</h4>
+                        <span>Accent & Recliners</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Decor & Lighting')">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=80" alt="Decor & Chandeliers">
+                    </div>
+                    <div class="category-body">
+                        <h4>Decor & Lighting</h4>
+                        <span>Chandeliers & Consoles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Product Catalog Section ================= -->
+    <section class="section catalog-section" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Premium Catalog</span>
+                <h2 class="section-title">Explore Al-Usman Masterpieces</h2>
+                <p class="section-desc">Handcrafted with precision using high-grade timber, plush upholstery, and royal finishes.</p>
+            </div>
+
+            <!-- Controls (Filter tabs, Search, Sort) -->
+            <div class="catalog-controls">
+                <div class="filter-tabs" id="categoryFilterTabs">
+                    <button class="filter-pill active" onclick="filterByCategory('All')">All Furniture</button>
+                    <button class="filter-pill" onclick="filterByCategory('Living Room')">Living Room</button>
+                    <button class="filter-pill" onclick="filterByCategory('Bedroom')">Bedroom</button>
+                    <button class="filter-pill" onclick="filterByCategory('Dining Room')">Dining Room</button>
+                    <button class="filter-pill" onclick="filterByCategory('Office')">Office</button>
+                    <button class="filter-pill" onclick="filterByCategory('Luxury Lounge')">Lounge</button>
+                    <button class="filter-pill" onclick="filterByCategory('Decor & Lighting')">Decor</button>
+                </div>
+
+                <div class="search-and-sort">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Search furniture, wood, bed..." oninput="handleSearch(this.value)">
+                    </div>
+
+                    <select class="sort-select" id="sortSelect" onchange="handleSort(this.value)">
+                        <option value="default">Featured Items</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid Container -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Bespoke Craftsmanship Section ================= -->
+    <section class="custom-craft-banner" id="craftsmanship">
+        <div class="container">
+            <div class="craft-content">
+                <span class="section-subtitle">Al-Usman Bespoke Studio</span>
+                <h2>Can't Find Exact Dimensions? We Custom Build It For You.</h2>
+                <p>
+                    Whether you have an architectural drawing, Pinterest mood board, or specific room measurements, our master artisans bring your interior vision to reality. Choose from Sheesham, Teak, Walnut, imported marble, and hundreds of Turkish fabrics.
+                </p>
+
+                <div class="craft-perks">
+                    <div class="perk-item">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <div>
+                            <h5>Exact Size Matching</h5>
+                            <p>Engineered to fit your room's proportions flawlessly.</p>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <div>
+                            <h5>150+ Fabric & Leather Options</h5>
+                            <p>Anti-stain velvets, Italian leathers & textured bouclé.</p>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <div>
+                            <h5>Free On-Site Assembly</h5>
+                            <p>Trained carpenters deliver & set up at your home.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://wa.me/923001234567?text=Hello%20Al-Usman%20Furniture,%20I%20want%20to%20discuss%20a%20custom%20order." target="_blank" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Send Room Measurements on WhatsApp
+                    </a>
+                    <a href="tel:+923001234567" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">
+                        <i class="fa-solid fa-phone"></i> Call Chief Artisan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Customer Testimonials ================= -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Client Reviews</span>
+                <h2 class="section-title">Words From Dignified Homes</h2>
+                <p class="section-desc">Read genuine reviews from families and corporate clients across Lahore, Islamabad, Karachi & Gujranwala.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We ordered the Chesterfield Velvet 7-seater sofa and the Onyx Marble dining table for our new house in DHA Lahore. The quality of Sheesham wood and carving details surpassed high-end imported furniture stores at half the price!"
+                    </p>
+                    <div class="customer-profile">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Kamran" class="customer-avatar">
+                        <div class="customer-info">
+                            <h5>Brig. (R) Kamran Qureshi</h5>
+                            <span>DHA Phase 6, Lahore • Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Al-Usman Furniture Mart provided the complete bedroom set with hydraulic storage for our daughter's wedding. Their polish finish and hydraulic mechanism are butter smooth. Delivered on time in Islamabad!"
+                    </p>
+                    <div class="customer-profile">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Dr. Fatima" class="customer-avatar">
+                        <div class="customer-info">
+                            <h5>Dr. Fatima Zahra</h5>
+                            <span>Sector F-7, Islamabad • Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Ordered 8 executive Scandinavian leather chairs for our software company in Karachi. Extremely comfortable for long hours and looks ultra premium in our boardroom. Highly recommended Al-Usman!"
+                    </p>
+                    <div class="customer-profile">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Mian Usman" class="customer-avatar">
+                        <div class="customer-info">
+                            <h5>Mian Usman Tariq</h5>
+                            <span>Clifton, Karachi • Corporate Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col footer-about">
+                    <div class="brand-logo" style="margin-bottom: 1.25rem;">
+                        <div class="brand-icon-box">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="brand-text">
+                            <h2 class="brand-title" style="color: #fff; font-size: 1.4rem;">Al-Usman</h2>
+                            <span>Furniture Mart</span>
+                        </div>
+                    </div>
+                    <p>
+                        Al-Usman Furniture Mart is dedicated to handcrafting heirloom quality solid wood furniture. Serving modern homes with regal comfort, seasoned Sheesham craftsmanship, and lifelong durability.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/923001234567" class="social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalog" onclick="filterByCategory('Living Room')"><i class="fa-solid fa-chevron-right"></i> Living Room Sofas</a></li>
+                        <li><a href="#catalog" onclick="filterByCategory('Bedroom')"><i class="fa-solid fa-chevron-right"></i> Imperial Bedroom Sets</a></li>
+                        <li><a href="#catalog" onclick="filterByCategory('Dining Room')"><i class="fa-solid fa-chevron-right"></i> Marble Dining Suites</a></li>
+                        <li><a href="#catalog" onclick="filterByCategory('Office')"><i class="fa-solid fa-chevron-right"></i> Ergonomic Office Furniture</a></li>
+                        <li><a href="#catalog" onclick="filterByCategory('Decor & Lighting')"><i class="fa-solid fa-chevron-right"></i> Luxury Chandeliers & Mirrors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul class="footer-links">
+                        <li><a href="#craftsmanship"><i class="fa-solid fa-chevron-right"></i> Custom Size Orders</a></li>
+                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> 10-Year Warranty Policy</a></li>
+                        <li><a href="admin.html"><i class="fa-solid fa-chevron-right"></i> Store Admin Portal</a></li>
+                        <li><a href="https://wa.me/923001234567" target="_blank"><i class="fa-solid fa-chevron-right"></i> WhatsApp Inquiries</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Shipping & Assembly Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Showroom & Factory</h4>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Showroom #12-16, Furniture Avenue, Main GT Road, Gujranwala / Lahore, Pakistan</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+92 300 1234567 / 055-1234567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>sales@al-usmanfurniture.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Mon - Sun: 10:00 AM - 10:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al-Usman Furniture Mart. All rights reserved. Handcrafted in Pakistan.</p>
+                <div style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="admin.html" style="color: var(--accent); font-weight: 600;"><i class="fa-solid fa-gauge"></i> Admin Dashboard</a>
+                    <span>Cash on Delivery • Bank Transfer • JazzCash Accepted</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= Side Drawers & Overlays ================= -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3><i class="fa-solid fa-bag-shopping" style="color: var(--accent);"></i> Your Cart (<span id="cartDrawerCount">0</span>)</h3>
+            <div class="btn-close-drawer" id="closeCartBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="drawer-body" id="cartItemsContainer">
+            <!-- Injected via JavaScript -->
+        </div>
+
+        <div class="drawer-footer" id="cartFooter">
+            <div class="coupon-box">
+                <input type="text" id="couponInput" placeholder="Promo code (e.g. ALUSMAN10)">
+                <button class="btn-apply-coupon" onclick="applyCoupon()">Apply</button>
+            </div>
+            <div class="cart-summary-row">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+            <div class="cart-summary-row" id="discountRow" style="display: none; color: var(--success);">
+                <span>Coupon Discount:</span>
+                <span id="cartDiscount">- Rs. 0</span>
+            </div>
+            <div class="cart-summary-row">
+                <span>Delivery:</span>
+                <span id="cartDelivery">Free (Orders > 50K)</span>
+            </div>
+            <div class="cart-total-row">
+                <span>Total Amount:</span>
+                <span id="cartGrandTotal">Rs. 0</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+                <button class="btn btn-primary" style="width: 100%;" onclick="openCheckoutModal()">
+                    <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+                </button>
+                <button class="btn btn-whatsapp" style="width: 100%;" onclick="checkoutViaWhatsApp()">
+                    <i class="fa-brands fa-whatsapp"></i> Order Directly On WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Drawer -->
+    <div class="wishlist-drawer" id="wishlistDrawer">
+        <div class="drawer-header">
+            <h3><i class="fa-solid fa-heart" style="color: #ef4444;"></i> Saved Wishlist (<span id="wishlistDrawerCount">0</span>)</h3>
+            <div class="btn-close-drawer" id="closeWishlistBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="drawer-body" id="wishlistItemsContainer">
+            <!-- Injected via JavaScript -->
+        </div>
+    </div>
+
+    <!-- ================= Quick View Modal ================= -->
+    <div class="modal-backdrop" id="quickViewModal">
+        <div class="modal-window">
+            <div class="modal-close-btn" onclick="closeQuickViewModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="quick-view-grid" id="quickViewContent">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Checkout Modal ================= -->
+    <div class="modal-backdrop" id="checkoutModal">
+        <div class="modal-window" style="max-width: 900px;">
+            <div class="modal-close-btn" onclick="closeCheckoutModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="checkout-modal-content">
+                <div style="margin-bottom: 1.5rem;">
+                    <span class="section-subtitle">Secure Checkout</span>
+                    <h2 style="font-size: 1.8rem; color: var(--primary);">Delivery & Payment Details</h2>
+                </div>
+
+                <div class="checkout-grid">
+                    <form id="checkoutForm" onsubmit="handlePlaceOrder(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" id="custName" class="form-control" required placeholder="e.g. Mian Tariq">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone / WhatsApp *</label>
+                                <input type="tel" id="custPhone" class="form-control" required placeholder="e.g. 0300-1234567">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" id="custEmail" class="form-control" placeholder="tariq@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Delivery City *</label>
+                                <select id="custCity" class="form-control" required>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad / Rawalpindi">Islamabad / Rawalpindi</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Gujranwala">Gujranwala</option>
+                                    <option value="Faisalabad">Faisalabad</option>
+                                    <option value="Sialkot">Sialkot</option>
+                                    <option value="Peshawar">Peshawar</option>
+                                    <option value="Multan">Multan</option>
+                                    <option value="Other">Other City in Pakistan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Complete Street Address *</label>
+                            <textarea id="custAddress" class="form-control" rows="2" required placeholder="House/Plot #, Street, Sector/Phase, Landmark"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Special Customization / Delivery Notes</label>
+                            <textarea id="custNotes" class="form-control" rows="2" placeholder="e.g. Call before delivery, preferred wood polish shade, apartment floor #"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Select Payment Method *</label>
+                            <div class="payment-methods-grid">
+                                <div class="payment-option-card selected" onclick="selectPaymentMethod(this, 'Cash on Delivery (COD)')">
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+                                    <span>Cash on Delivery</span>
+                                </div>
+                                <div class="payment-option-card" onclick="selectPaymentMethod(this, 'Direct Bank Transfer')">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    <span>Bank Transfer</span>
+                                </div>
+                                <div class="payment-option-card" onclick="selectPaymentMethod(this, 'JazzCash / EasyPaisa')">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>JazzCash / EasyPaisa</span>
+                                </div>
+                                <div class="payment-option-card" onclick="selectPaymentMethod(this, 'Online Card Payment')">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                    <span>Debit/Credit Card</span>
+                                </div>
+                            </div>
+                            <input type="hidden" id="selectedPaymentMethod" value="Cash on Delivery (COD)">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; margin-top: 1rem; font-size: 1.05rem;">
+                            <i class="fa-solid fa-check"></i> Confirm & Place Furniture Order
+                        </button>
+                    </form>
+
+                    <div class="checkout-order-summary">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary);">Order Review</h4>
+                        <div id="checkoutSummaryItems" style="max-height: 250px; overflow-y: auto; margin-bottom: 1rem; font-size: 0.88rem;">
+                            <!-- Injected via JavaScript -->
+                        </div>
+                        <div style="border-top: 1px dashed var(--border); padding-top: 0.75rem;">
+                            <div class="cart-summary-row">
+                                <span>Subtotal:</span>
+                                <span id="coSubtotal">Rs. 0</span>
+                            </div>
+                            <div class="cart-summary-row" id="coDiscountRow" style="display: none; color: var(--success);">
+                                <span>Discount:</span>
+                                <span id="coDiscount">- Rs. 0</span>
+                            </div>
+                            <div class="cart-summary-row">
+                                <span>Delivery Fee:</span>
+                                <span id="coDelivery">Free</span>
+                            </div>
+                            <div class="cart-total-row" style="margin-bottom: 0;">
+                                <span>Payable Total:</span>
+                                <span id="coTotal" style="color: var(--accent);">Rs. 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Order Success / Invoice Modal ================= -->
+    <div class="modal-backdrop" id="orderSuccessModal">
+        <div class="modal-window" style="max-width: 650px;">
+            <div class="modal-close-btn" onclick="closeOrderSuccessModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div style="padding: 2.5rem; text-align: center;" id="orderSuccessReceipt">
+                <div style="width: 70px; height: 70px; background: #e8f8ed; color: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 1.25rem;">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 style="font-size: 1.7rem; color: var(--primary); margin-bottom: 0.5rem;">Shukriya! Order Placed Successfully</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                    Your luxury order has been registered in the Al-Usman Furniture Mart database. Our representative will contact you shortly to confirm fabric shades and delivery schedule.
+                </p>
+
+                <div id="receiptDetailsBox" style="background: var(--bg-warm); padding: 1.5rem; border-radius: var(--radius-md); text-align: left; margin-bottom: 1.75rem; border: 1px solid var(--border);">
+                    <!-- Dynamic Receipt Generated via JS -->
+                </div>
+
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <button class="btn btn-secondary" onclick="printReceipt()">
+                        <i class="fa-solid fa-print"></i> Print Invoice
+                    </button>
+                    <a href="admin.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-gauge"></i> View in Admin Panel
+                    </a>
+                    <button class="btn btn-primary" onclick="closeOrderSuccessModal()">
+                        <i class="fa-solid fa-shopping-bag"></i> Continue Shopping
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum%20Al-Usman%20Furniture%20Mart,%20I%20have%20an%20inquiry." target="_blank" class="whatsapp-floating-btn" title="Live WhatsApp Chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
